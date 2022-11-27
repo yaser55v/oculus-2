@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Miedinger";
+    src: url("/fonts/Miedinger-W01-Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Neometric Extra Bold";
+    src: url("/fonts/Neometric-Extra-Bold.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Neometric Medium";
+    src: url("/fonts/Neometric-Medium.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Neometric Regular";
+    src: url("/fonts/Neometric-Regular.woff") format("woff");
+  }
+}
+@layer utilities {
+  .square {
+    aspect-ratio: 2 / 1;
+  }
+  #globalLoader {
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .home {
+    z-index: 9999;
+    font-size: 4rem;
+    padding-top: 10rem;
+  }
+}
