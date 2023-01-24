@@ -19,7 +19,6 @@ const Home = () => {
       <Hero />
       <Oculus />
       <Feature />
-      {/* <Games /> */}
       <Demo />
       <Closer />
       <Users />
