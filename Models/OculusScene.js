@@ -57,7 +57,7 @@ export function Loader() {
 
 const ModelOculus = (props) => {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/oculus2.glb");
+  const { nodes, materials } = useLoader(GLTFLoader, "/oculus2.glb");
   gsap.registerPlugin(ScrollTrigger);
 
   let camera = useThree((state) => state.camera);
