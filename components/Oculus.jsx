@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import ModelOculus from "../Models/OculusScene";
 import Model from "../Models/Scene";
+import { Loader } from "../Models/OculusScene";
 
 const Oculus = () => {
   return (
@@ -12,7 +13,7 @@ const Oculus = () => {
     >
       <Canvas shadows>
         <ambientLight intensity={0.1} />
-        <Suspense fallback={null}>
+        <Suspense fallback={<Loader />}>
           {/* <Model  /> */}
           <ModelOculus />
           <Environment preset="city" />
